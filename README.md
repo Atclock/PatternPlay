@@ -83,5 +83,3 @@ This function lights the LEDS with Red if the sequence is wrong.
 
 ### showResultsScreen 
 This function shows the average time and a streak counter
-This function shows the average time as well as a streak of all the successful attemps the kid went through.
-
