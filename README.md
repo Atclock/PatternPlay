@@ -1,7 +1,7 @@
-** # PatternPlay **
+ # PatternPlay
 PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, that benefits them and gives feedback to a supposed therapist (The feedback here wasn't as much, more on that later)
 
-** # How this work **
+# How this work 
 
 First, you need those items
 - Arduino Nano
@@ -19,7 +19,7 @@ The code was made using C++ Arduino UNO, we tested and connected all components 
 After that the code, we divided that into parts
 
 
-** I. Libraries **
+## I. Libraries
 The libraries used in this project were mostly for the display, shown here
 - Wire.h
 - Adafruit_GFX.h
@@ -31,11 +31,11 @@ All libraries are downloadable inside the Arduino app
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 ```
 
-** II. Defining variables **
+## II. Defining variables 
 - we defined 6 Arrays, each corresponding to an element of the build as well as the sequences and frequencies.
 - Other variables included a level counter, a streak counter, a boolean variable, average time.
 
-** III. setUp **
+## III. setUp 
 Inside setup we implemented the following
 - Incase the display failed to begin, a message is shown.
 - Otherwise, the display is cleared, and the text is given properties.
@@ -46,7 +46,7 @@ Inside setup we implemented the following
 - A small intro is made, the idea is to pull the kids attention towards the toy.
 - Sequence and random are given values.
 
-** IV. loop **
+## IV. loop 
 - We assume that the value of correct is true
 - A sequence is shown.
 - A for loop is implemented so that Memory is filled up, a function is called to detect switches.
@@ -57,27 +57,27 @@ Inside setup we implemented the following
 - Level is restarted.
 - If correct is equal to false, the errorFlash function is called and the level is restarted to 1.
 
-** V. Functions **
-*** setColor ****
+## V. Functions
+### setColor 
 This function sets LED colors to a given value, it was made for a commone cathode value.
 
-*** waitForPress ***
+### waitForPress 
 This function is set to wait if any of the switches are set to LOW, indictating it was pressed.
 ** The switches we worked with are set to HIGH when unpressed and set to LOW when pressed.
 
-*** showSequence ***
+### showSequence
 This function shows the sequence up to the level reached, it also plays a tone using the buzzer.
 
-*** displayMessage ***
+### displayMessage
 This function was used for the demo version, it shows a simple message
 
-*** successfulFlash ***
+### successfulFlash
 This function lights the LEDS with green if a level is passed, it lights up the LEDS of the sequence.
 
-*** errorFlash ***
+### errorFlash 
 This function lights the LEDS with Red if the sequence is wrong.
 
-*** showResultsScreen ***
-
+### showResultsScreen 
+This function shows the average time and a streak counter
 This function shows the average time as well as a streak of all the successful attemps the kid went through.
 
