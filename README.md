@@ -13,7 +13,7 @@ First, you need those items
 - A small Stuffed toy (Our victim)
 
 The code was made using C++ Arduino UNO, we tested and connected all components as shown in the Simulink Picture
-![https://github.com/Atclock/PatternPlay/blob/main/Images/Screenshot%202025-11-26%20104712.png]
+![Alt text] (https://github.com/Atclock/PatternPlay/blob/main/Images/Screenshot%202025-11-26%20104712.png)
 
 
 After that the code, we divided that into parts
