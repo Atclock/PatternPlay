@@ -1,19 +1,19 @@
  # PatternPlay
-PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, that benefits them and gives feedback to a supposed therapist (The feedback here wasn't as much, more on that later)
+PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, that benefits them and gives feedback to a supposed therapist.
 
 # How this work 
 
 First, you need those items
 - Arduino Nano
 - 5 LEDS (This was a common cathode design)
-- 5 switches (We did 3D Design a small piece for the switches to stay in, I will upload the folder but it is not the right size since the folder I got is a demo one)
+- 5 switches (We did 3D Design small pieces for the switches to stay in, adding extra surface and making it easier for kids to press them, I will upload the folder but it is not the right size since the folder I got is a demo one)
 - Buzzer
 - A display to show results for the therapist (Here implemented simply using AdaFruit SSD1306)
 - Wires (A lot)
 - A small Stuffed toy (Our victim)
 
 The code was made using C++ Arduino UNO, we tested and connected all components as shown in the Simulink Picture
-![Images/Screenshot 2025-11-26 104712.png]
+![PatternPlay/Images/Screenshot 2025-11-26 104712.png]
 
 
 After that the code, we divided that into parts
