@@ -1,5 +1,5 @@
  # PatternPlay
-PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, The game helps them decvelop pattern recognition skills and gives feedback to a supposed therapist.
+PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, The game helps them develop pattern recognition skills and gives feedback to a supposed therapist.
 
 # How it works
 
@@ -15,9 +15,10 @@ We used the following items
 Apps used
 - Arduino legacy
 - Fusion
-- SimulLink
+- Simulink
 
 We tested and connected all components as shown in the Simulink Picture
+
 ![Simulink Picture](https://github.com/Atclock/PatternPlay/blob/main/Images/Screenshot%202025-11-26%20104712.png?raw=true)
 
 
@@ -28,7 +29,7 @@ The libraries used in this project were mostly for the display, shown here
 - Wire.h
 - Adafruit_GFX.h
 - Adafruit_SSD1306.h
-All libraries are downloadable inside the Arduino app.
+All libraries are downloadable inside the Arduino app. <br></br>
 (You also need to define the screen width and height, then write this down, I did not want to make a whole section for this one)
 
 ```
@@ -44,7 +45,7 @@ Inside setup we implemented the following
 - Incase the display failed to begin, a message is shown.
 - Otherwise, the display is cleared, and the text is given properties.
 - A message is shown indicating that a new round has begun.
-- A for loop is implemented to give values to each pin
+- A for loop is implemented to give values to each pin <br></br>
   ** In switches[i] we used INPUT_PULLUP since the LEDS are a common cathode.
 - The buzzer is also given a mode.
 - A small intro is made, the idea is to pull the kids attention towards the toy.
