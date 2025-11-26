@@ -1,9 +1,9 @@
  # PatternPlay
-PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, that benefits them and gives feedback to a supposed therapist.
+PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, The game helps them decvelop pattern recognition skills and gives feedback to a supposed therapist.
 
 # How it works
 
-First, you need those items
+We used the following items
 - Arduino Nano
 - 5 LEDS (This was a common cathode design)
 - 5 switches (We did 3D Design small pieces for the switches to stay in, adding extra surface and making it easier for kids to press them, I will upload the folder but it is not the right size since the folder I got is a demo one)
@@ -12,19 +12,23 @@ First, you need those items
 - Wires (A lot)
 - A small Stuffed toy (Our victim)
 
-The code was made using C++ Arduino UNO, we tested and connected all components as shown in the Simulink Picture
+Apps used
+- Arduino legacy
+- Fusion
+- SimulLink
+
+We tested and connected all components as shown in the Simulink Picture
 ![Simulink Picture](https://github.com/Atclock/PatternPlay/blob/main/Images/Screenshot%202025-11-26%20104712.png?raw=true)
 
 
-After that the code, we divided that into parts
-
+We divided the code into parts
 
 ## I. Libraries
 The libraries used in this project were mostly for the display, shown here
 - Wire.h
 - Adafruit_GFX.h
 - Adafruit_SSD1306.h
-All libraries are downloadable inside the Arduino app
+All libraries are downloadable inside the Arduino app.
 (You also need to define the screen width and height, then write this down, I did not want to make a whole section for this one)
 
 ```
@@ -32,7 +36,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 ```
 
 ## II. Defining variables 
-- we defined 6 Arrays, each corresponding to an element of the build as well as the sequences and frequencies.
+- we defined 7 Arrays, each corresponding to an element of the build as well as the sequences and frequencies.
 - Other variables included a level counter, a streak counter, a boolean variable, average time.
 
 ## III. setUp 
