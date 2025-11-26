@@ -1,7 +1,7 @@
  # PatternPlay
 PatternPlay is a game designed to help children develop pattern recognition skills, this project was made during the GJU/Uni Stuttgart Hackamed 2025, the challenge was to make a toy for chidren within the age of 2-4, that benefits them and gives feedback to a supposed therapist.
 
-# How this work 
+# How it works
 
 First, you need those items
 - Arduino Nano
@@ -13,7 +13,7 @@ First, you need those items
 - A small Stuffed toy (Our victim)
 
 The code was made using C++ Arduino UNO, we tested and connected all components as shown in the Simulink Picture
-![PatternPlay/Images/Screenshot 2025-11-26 104712.png]
+![https://github.com/Atclock/PatternPlay/blob/main/Images/Screenshot%202025-11-26%20104712.png]
 
 
 After that the code, we divided that into parts
